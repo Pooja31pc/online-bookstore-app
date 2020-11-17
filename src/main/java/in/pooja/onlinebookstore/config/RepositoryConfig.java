@@ -1,7 +1,7 @@
 package in.pooja.onlinebookstore.config;
 
-import in.pooja.onlinebookstore.entity.Book;
-import in.pooja.onlinebookstore.entity.BookCategory;
+//import in.pooja.onlinebookstore.entity.Book;
+//import in.pooja.onlinebookstore.entity.BookCategory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
@@ -27,7 +27,7 @@ public class RepositoryConfig implements RepositoryRestConfigurer {
         config.exposeIdsFor(entityManager.getMetamodel().getEntities().stream()
                 .map(Type::getJavaType)
                 .toArray(Class[]::new));
-        
+
     }
 
 }

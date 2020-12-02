@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-ordered-details',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderedDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _cartService: CartService
+  ) { }
 
   ngOnInit(): void {
+    localStorage.removeItem("cartDetails");
+    this._cartService.emptyCart();
+    
   }
 
 }

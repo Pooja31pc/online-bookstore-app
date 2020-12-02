@@ -82,4 +82,18 @@ export class CartService {
     }
   }
 
+  emptyCart() {
+    // for(let currentCartItem of this.cartItems){
+
+    //   this.remove(currentCartItem);
+
+    // }
+
+    for(var i=0;i<CartItem.length;i++){
+      this.cartItems.splice(CartItem[i]);
+    }
+
+    this.calculateTotalPrice();
+  }
+
 }

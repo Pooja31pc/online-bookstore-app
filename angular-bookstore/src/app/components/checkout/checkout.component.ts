@@ -62,7 +62,7 @@ export class CheckoutComponent implements OnInit {
       }
     );
 
-    // populate countries
+    
   
   }
 
@@ -112,6 +112,8 @@ export class CheckoutComponent implements OnInit {
       }
     );
   }
+
+
 }
 
 

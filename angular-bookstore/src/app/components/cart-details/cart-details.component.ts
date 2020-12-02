@@ -52,4 +52,7 @@ export class CartDetailsComponent implements OnInit {
 
   }
 
+  
+  
+
 }
